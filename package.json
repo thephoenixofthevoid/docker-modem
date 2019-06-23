@@ -23,12 +23,15 @@
     "split-ca": "^1.0.0"
   },
   "devDependencies": {
+    "@types/node": "10.5.1",
+    "typescript": "^2.1.6",
     "chai": "~4.1.0",
     "mocha": "^5.2.0"
   },
   "main": "./lib/modem",
   "scripts": {
-    "test": "./node_modules/mocha/bin/mocha -R spec --exit"
+    "test": "./node_modules/mocha/bin/mocha -R spec --exit",
+    "build": "tsc --outDir lib"
   },
   "engines": {
     "node": ">= 0.8"
